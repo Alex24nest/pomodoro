@@ -58,7 +58,6 @@
   padding: 15px 50px;
   border-radius: 15px;
   background-color: rgb(0, 0, 0, 0.3);
-  color: white;
 }
 
 .buttons {
@@ -70,6 +69,7 @@
   font-weight: bold;
   color: white;
   padding: 40px;
+  margin: 0;
 }
 
 .settings-grid {
@@ -102,58 +102,22 @@
   color: white;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
-  #root {
-    max-width: 100%; /* Make root element take full width on small screens */
-    padding: 10px; /* Add some padding for small screens */
+  .navigation {
+    padding: 5vw;
+    font-size: 18px;
   }
 
   .timer {
-    font-size: 5em; /* Adjust font size for smaller screens */
-    width: 100%; /* Timer takes full width */
-    height: auto; /* Auto height for better flexibility */
-    margin: 20px 0; /* Adjust margin */
+    width: 90vw;
+    height: 260px;
   }
 
-  .start-pause, .reset {
-    width: 90%; /* Buttons take nearly full width */
-    font-size: 20px; /* Smaller font size */
-    height: 60px; /* Smaller button height */
-    margin: 10px auto; /* Center and add margin */
-  }
-
-  .setting-button {
-    font-size: 18px; /* Smaller font size */
-    padding: 10px 30px; /* Adjust padding */
-    width: 100%; /* Button takes full width */
-  }
-
-  .settings-title, .setting-label {
-    font-size: 20px; /* Smaller font sizes for titles and labels */
-  }
-
-  .setting-input {
-    width: 90%; /* Adjust width of input fields */
-    padding: 8px; /* Adjust padding */
-    font-size: 16px; /* Smaller font size for inputs */
+  .start-pause {
+    width: 65vw;
   }
 
   .settings-grid {
-    grid-template-columns: 1fr; /* Stack settings options vertically on small screens */
-  }
-
-  .navigation, .buttons {
-    flex-direction: column; /* Stack navigation and button items vertically */
-    align-items: center; /* Center align items */
-    width: 100%; /* Use full width */
-  }
-
-  .settings-grid, .setting-row {
-    width: 100%; /* Ensure settings grid and rows take full width */
+    grid-template-columns: 1fr;
   }
 }
-
-
-
-
